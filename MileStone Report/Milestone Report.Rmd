@@ -63,7 +63,7 @@ summaryData
 * *Since the data sizes are very large (total of about 550 MB), we take samples of each dataset and use them for the rest of the analysis in order to reduce size and processing time.*
 
 ```{r, echo = FALSE}
-set.seed(1995)
+set.seed(2020)
 blogsSample <- sample(blogs, blogsLength * 0.001)
 newsSample <- sample(news, newsLength * 0.001)
 twitterSample <- sample(twitter, twitterLength * 0.001)
@@ -160,7 +160,7 @@ ggplot(uniFreq.df[1:10, ], aes(x = reorder(Word, Freq), y = Freq, fill = Freq, a
 
 * **Wordcloud:**
 ```{r, echo = FALSE}
-set.seed(1995)
+set.seed(2020)
 wordcloud2(uniFreq.df, size = 2, fontWeight = "bold", fontFamily = "Comic Sans MS", color = "random-light", backgroundColor = "black")
 ```
 
@@ -187,7 +187,7 @@ ggplot(biFreq.df[1:10, ], aes(x = reorder(Word, Freq), y = Freq, fill = Freq, al
 
 * **Wordcloud:**
 ```{r, echo = FALSE}
-set.seed(1995)
+set.seed(2020)
 wordcloud2(biFreq.df, fontWeight = "normal", fontFamily = "Comic Sans MS", color = "random-light", backgroundColor = "black")
 ```
 
@@ -214,7 +214,7 @@ ggplot(triFreq.df[1:10, ], aes(x = reorder(Word, Freq), y = Freq, fill = Freq, a
 
 * **Wordcloud:**
 ```{r, echo = FALSE}
-set.seed(1995)
+set.seed(2020)
 wordcloud2(triFreq.df, size = 0.5, fontWeight = "bold", color = "random-light", fontFamily = "Comic Sans MS", backgroundColor = "black")
 ```
 
@@ -241,7 +241,7 @@ ggplot(fourFreq.df[1:10, ], aes(x = reorder(Word, Freq), y = Freq, fill = Freq, 
 
 * **Wordcloud:**
 ```{r, echo = FALSE}
-set.seed(1995)
+set.seed(2020)
 wordcloud2(fourFreq.df, size = 0.5, fontWeight = "bold", color = "random-light", fontFamily = "Comic Sans MS", backgroundColor = "black")
 ```
 
@@ -268,7 +268,7 @@ ggplot(fiveFreq.df[1:10, ], aes(x = reorder(Word, Freq), y = Freq, fill = Freq, 
 
 * **Wordcloud:**
 ```{r, echo = FALSE}
-set.seed(1995)
+set.seed(2020)
 wordcloud2(fiveFreq.df, size = 0.4, fontWeight = "bold", color = "random-light", fontFamily = "Comic Sans MS", backgroundColor = "black")
 ```
 
