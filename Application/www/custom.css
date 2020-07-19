@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Mirza&family=Vast+Shadow&display=swap');
+
+h1{
+    font-family: 'Vast Shadow', cursive;
+}
+
+body {
+        background-image: url("image.jpg"); 
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        background-position: center center;
+        height: 100vh; 
+
+    margin: 0;
+    font-family: 'Mirza', cursive;
+    color: #223;
+    background-color: #fff;
+}
